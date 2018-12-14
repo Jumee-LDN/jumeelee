@@ -1,2 +1,0 @@
-# jumeelee
-# jumeelee woppp
