@@ -1,0 +1,118 @@
+.title-container {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title-container .summary-box .summary-contents {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  margin: 0;
+}
+body main {
+  display: grid;
+}
+
+.box2 {
+  width: 100vw;
+  height: 400px;
+  background-color: pink;
+}
+
+.keyword-box {
+  width: 50vw;
+  height: 400px;
+  background-color: green;
+}
+
+.keyword {
+  font-size: 6rem;
+}
+
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 1800px;
+  background-color: blue;
+  position: relative;
+}
+.title-container .title-box {
+  width: 50vw;
+  background-color: grey;
+}
+.title-container .title-box .title {
+  margin-top: 10rem;
+  margin-left: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.title-container .title-box .title p {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
+}
+.title-container .title-box .title .fam-name {
+  line-height: 3rem;
+}
+.title-container .summary-box {
+  width: 50vw;
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 3rem;
+}
+.title-container .summary-box #summary-start {
+  padding: 0.8rem 5rem 0rem 1.4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+.title-container .summary-box .summary-contents {
+  padding: 0.8rem 5rem 0rem 1.4rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-container {
+    background-color: red;
+    flex-direction: column;
+    height: 1200px;
+  }
+  .title-container .title-box {
+    width: 100vw;
+    height: 600px;
+  }
+  .title-container .summary-box {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .title-container {
+    background-color: green;
+    height: 1400px;
+  }
+  .title-container .title-box .title {
+    margin: 1.5rem;
+  }
+  .title-container .title-box .title p {
+    font-size: 5rem;
+  }
+  .title-container .summary-box #summary-start {
+    padding: 1.5rem;
+    padding-bottom: 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .title-container .summary-box .summary-contents {
+    padding: 0.5rem 3rem 0 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
