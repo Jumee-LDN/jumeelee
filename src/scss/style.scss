@@ -5,12 +5,17 @@
   font-family: 'Merriweather', serif;
 }
 
+$content-padding: 0.8rem 5rem 0rem 1.4rem;
+
+
 body {
   margin: 0;
   main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @import "partials/about";
 @import "partials/title";
+@import "partials/projects";

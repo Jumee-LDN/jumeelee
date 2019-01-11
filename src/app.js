@@ -1,10 +1,15 @@
 
 const $title = $('.title').eq(0);
-// const title = document.getElementsByClassName('title')[0];
-var windw = this;
+const $allTitles = $('[id=title]');
+const $keywordBox = $('.keyword');
+const $contentBox = $('.contents-box');
+const $aboutContainer = $('.about-container');
 
-$.fn.followTo = function ( pos ) {
-  var $this = this,
+const windw = this;
+const $this = this;
+
+$.fn.siteTitleEffect = function ( pos ) {
+  const $this = this,
     $window = $(windw);
 
   $window.scroll(function(){
@@ -21,5 +26,18 @@ $.fn.followTo = function ( pos ) {
     }
   });
 };
+$title.siteTitleEffect(1380);
 
-$title.followTo(1380);
+const titleToUpperCase = () => {
+  for ( let i=0; i < $allTitles.length; i++){
+    $allTitles[i].innerHTML = $allTitles[i].innerHTML.toUpperCase();
+  }
+};
+titleToUpperCase();
+
+$keywordBox.click(
+  () => {
+    $contentBox.toggle();
+    // $aboutContainer
+  }
+);

@@ -1,20 +1,33 @@
 
-.box2 {
+.about-container {
+  @extend %sans-set;
+  // display: flex;
+  // flex-wrap: wrap;
   width: 100vw;
-  height: 400px;
+  height: 500px;
   background-color: pink;
-}
+  position: relative;
 
-.keyword-box{
+  .keyword-box{
+    display: grid;
+    position: absolute;
     width: 50vw;
     height: 400px;
-    background-color: green;
-}
+    background-color: skyblue;
+    .keyword {
+      font-size: 6rem;
+      font-weight: 700;
+      margin: auto;
+    }
+  }
 
-.keyword {
-  font-size: 6rem;
-}
-
-.me-blurb-box{
+  .contents-box{
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 400px;
+    background-color: papayawhip;
+    display: none;
+  }
 
 }

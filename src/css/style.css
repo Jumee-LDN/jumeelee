@@ -1,4 +1,4 @@
-.title-container {
+.title-container, .about-container {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -10,23 +10,35 @@ body {
   margin: 0;
 }
 body main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
-.box2 {
+.about-container {
   width: 100vw;
-  height: 400px;
+  height: 500px;
   background-color: pink;
+  position: relative;
 }
-
-.keyword-box {
+.about-container .keyword-box {
+  display: grid;
+  position: absolute;
   width: 50vw;
   height: 400px;
-  background-color: green;
+  background-color: skyblue;
 }
-
-.keyword {
+.about-container .keyword-box .keyword {
   font-size: 6rem;
+  font-weight: 700;
+  margin: auto;
+}
+.about-container .contents-box {
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  height: 400px;
+  background-color: papayawhip;
+  display: none;
 }
 
 .title-container {
