@@ -10,12 +10,15 @@
   height: 400px;
 }
 
+$black: #181818;
 
 $content-padding: 0.8rem 5rem 0rem 1.4rem;
 
 
 body {
   margin: 0;
+  color: $black;
+  @extend %sans-set;
   main {
     display: flex;
     flex-direction: column;
@@ -26,3 +29,4 @@ body {
 @import "partials/aboutAndNature";
 @import "partials/foodAndArt";
 @import "partials/lifeAndContact";
+@import "partials/footer";

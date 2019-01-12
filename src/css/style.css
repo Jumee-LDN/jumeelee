@@ -1,4 +1,4 @@
-#keywords-section #title, .title-container {
+#keywords-section #title, .title-container, body {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -13,6 +13,7 @@
 
 body {
   margin: 0;
+  color: #181818;
 }
 body main {
   display: flex;
@@ -24,12 +25,10 @@ body main {
   flex-wrap: wrap;
   width: 100vw;
   height: 1800px;
-  background-color: blue;
   position: relative;
 }
 .title-container .title-box {
   width: 50vw;
-  background-color: grey;
 }
 .title-container .title-box .title {
   margin-top: 10rem;
@@ -108,7 +107,6 @@ body main {
   position: relative;
   width: 100vw;
   height: 100%;
-  background-color: pink;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -121,26 +119,27 @@ body main {
   font-weight: 400;
   font-size: 1.5rem;
 }
+#keywords-section .text-box {
+  padding: 0.8rem 5rem 0rem 1.4rem;
+}
 #keywords-section #about-box {
   display: grid;
-  background-color: cadetblue;
 }
 #keywords-section #about-box .title-box {
   margin: auto;
 }
 #keywords-section #about-contents-box {
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 #keywords-section #nature-box {
   display: grid;
-  background-color: turquoise;
 }
 #keywords-section #nature-box .title-box {
   margin: auto;
 }
 #keywords-section #nature-contents-box {
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
@@ -167,72 +166,83 @@ body main {
   }
   #keywords-section #about-box, #keywords-section #about-contents-box, #keywords-section #nature-box, #keywords-section #nature-contents-box {
     width: 100vw;
-    height: 300px;
+    height: 280px;
   }
 }
 #food-box {
   display: grid;
-  background-color: royalblue;
 }
 #food-box .title-box {
   margin: auto;
 }
 
 #food-contents-box {
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
 #art-box {
   display: grid;
-  background-color: deepskyblue;
 }
 #art-box .title-box {
   margin: auto;
 }
 
 #art-contents-box {
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
 @media only screen and (max-width: 480px) {
   #food-box, #food-contents-box, #art-box, #art-contents-box {
     width: 100vw;
-    height: 300px;
+    height: 280px;
   }
 }
 #life-box {
   display: grid;
-  background-color: aquamarine;
 }
 #life-box .title-box {
   margin: auto;
 }
 
 #life-contents-box {
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
 #contact-box {
   display: grid;
-  background-color: paleturquoise;
 }
 #contact-box .title-box {
   margin: auto;
 }
 
 #contact-contents-box {
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
 @media only screen and (max-width: 480px) {
   #life-box, #life-contents-box, #contact-box, #contact-contents-box {
     width: 100vw;
-    height: 300px;
+    height: 280px;
   }
+}
+footer {
+  background-color: #181818;
+  display: flex;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+footer section {
+  width: 100vw;
+  height: 300px;
+  display: grid;
+}
+footer section div {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

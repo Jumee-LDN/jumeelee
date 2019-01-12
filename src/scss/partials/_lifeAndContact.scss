@@ -2,28 +2,28 @@
 #life-box {
   @extend %half-box-sizing;
   display: grid;
-  background-color: aquamarine;
+  // background-color: aquamarine;
   .title-box {
     margin: auto;
   }
 }
 #life-contents-box {
   @extend %half-box-sizing;
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
 #contact-box {
   @extend %half-box-sizing;
   display: grid;
-  background-color: paleturquoise;
+  // background-color: paleturquoise;
   .title-box {
     margin: auto;
   }
 }
 #contact-contents-box {
   @extend %half-box-sizing;
-  background-color: papayawhip;
+  background-color: yellow;
   display: none;
 }
 
@@ -32,6 +32,6 @@
 @media only screen and (max-width: 480px) {
 #life-box, #life-contents-box, #contact-box, #contact-contents-box {
   width: 100vw;
-  height: 300px;
+  height: 280px;
   }
 }
