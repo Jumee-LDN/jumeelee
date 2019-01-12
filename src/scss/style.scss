@@ -5,6 +5,11 @@
   font-family: 'Merriweather', serif;
 }
 
+%half-box-sizing {
+  width: 50vw;
+  height: 400px;
+}
+
 $content-padding: 0.8rem 5rem 0rem 1.4rem;
 
 
@@ -16,6 +21,5 @@ body {
   }
 }
 
-@import "partials/about";
 @import "partials/title";
-@import "partials/projects";
+@import "partials/keywords";

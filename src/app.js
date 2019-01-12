@@ -1,9 +1,10 @@
 
 const $title = $('.title').eq(0);
 const $allTitles = $('[id=title]');
-const $keywordBox = $('.keyword');
-const $contentBox = $('.contents-box');
-const $aboutContainer = $('.about-container');
+const $aboutKeywordBox = $('.about-keyword-box');
+const $aboutContentBox = $('.about-contents-box');
+const $natureKeywordBox = $('.nature-keyword-box');
+const $natureContentBox = $('.nature-contents-box');
 
 const windw = this;
 const $this = this;
@@ -35,9 +36,13 @@ const titleToUpperCase = () => {
 };
 titleToUpperCase();
 
-$keywordBox.click(
+$aboutKeywordBox.click(
   () => {
-    $contentBox.toggle();
-    // $aboutContainer
+    $aboutContentBox.toggle();
+  }
+);
+$natureKeywordBox.click(
+  () => {
+    $natureContentBox.toggle();
   }
 );

@@ -1,0 +1,46 @@
+
+#keywords-section {
+  width: 100vw;
+  height: 100%;
+  background-color: pink;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  #title {
+    @extend %sans-set;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  #paragraphs {
+    @extend %serif-set;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  #about-box {
+    @extend %half-box-sizing;
+    display: grid;
+    background-color: yellow;
+    .title-box {
+      margin: auto;
+    }
+  }
+  #about-contents-box {
+    @extend %half-box-sizing;
+    background-color: green;
+    display: none;
+  }
+  #nature-box {
+    @extend %half-box-sizing;
+    display: grid;
+    background-color: blue;
+    .title-box {
+      margin: auto;
+    }
+  }
+  #nature-contents-box {
+    @extend %half-box-sizing;
+    background-color: papayawhip;
+    display: none;
+  }
+
+}
