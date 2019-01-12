@@ -6,7 +6,7 @@
   font-family: "Merriweather", serif;
 }
 
-#keywords-section #nature-contents-box, #keywords-section #nature-box, #keywords-section #about-contents-box, #keywords-section #about-box {
+#contact-contents-box, #contact-box, #life-contents-box, #life-box, #art-contents-box, #art-box, #food-contents-box, #food-box, #keywords-section #nature-contents-box, #keywords-section #nature-box, #keywords-section #about-contents-box, #keywords-section #about-box {
   width: 50vw;
   height: 400px;
 }
@@ -105,6 +105,7 @@ body main {
   }
 }
 #keywords-section {
+  position: relative;
   width: 100vw;
   height: 100%;
   background-color: pink;
@@ -122,18 +123,18 @@ body main {
 }
 #keywords-section #about-box {
   display: grid;
-  background-color: yellow;
+  background-color: cadetblue;
 }
 #keywords-section #about-box .title-box {
   margin: auto;
 }
 #keywords-section #about-contents-box {
-  background-color: green;
+  background-color: papayawhip;
   display: none;
 }
 #keywords-section #nature-box {
   display: grid;
-  background-color: blue;
+  background-color: turquoise;
 }
 #keywords-section #nature-box .title-box {
   margin: auto;
@@ -141,6 +142,97 @@ body main {
 #keywords-section #nature-contents-box {
   background-color: papayawhip;
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #keywords-section {
+    background-color: red;
+  }
+  #keywords-section #title {
+    font-size: 3.2rem;
+  }
+  #keywords-section #paragraphs {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #keywords-section {
+    background-color: green;
+  }
+  #keywords-section #title {
+    font-size: 2.5rem;
+  }
+  #keywords-section #paragraphs {
+    font-size: 1rem;
+  }
+  #keywords-section #about-box, #keywords-section #about-contents-box, #keywords-section #nature-box, #keywords-section #nature-contents-box {
+    width: 100vw;
+    height: 300px;
+  }
+}
+#food-box {
+  display: grid;
+  background-color: royalblue;
+}
+#food-box .title-box {
+  margin: auto;
+}
+
+#food-contents-box {
+  background-color: papayawhip;
+  display: none;
+}
+
+#art-box {
+  display: grid;
+  background-color: deepskyblue;
+}
+#art-box .title-box {
+  margin: auto;
+}
+
+#art-contents-box {
+  background-color: papayawhip;
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #food-box, #food-contents-box, #art-box, #art-contents-box {
+    width: 100vw;
+    height: 300px;
+  }
+}
+#life-box {
+  display: grid;
+  background-color: aquamarine;
+}
+#life-box .title-box {
+  margin: auto;
+}
+
+#life-contents-box {
+  background-color: papayawhip;
+  display: none;
+}
+
+#contact-box {
+  display: grid;
+  background-color: paleturquoise;
+}
+#contact-box .title-box {
+  margin: auto;
+}
+
+#contact-contents-box {
+  background-color: papayawhip;
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #life-box, #life-contents-box, #contact-box, #contact-contents-box {
+    width: 100vw;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

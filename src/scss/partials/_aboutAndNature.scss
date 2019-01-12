@@ -1,5 +1,6 @@
 
 #keywords-section {
+  position: relative;
   width: 100vw;
   height: 100%;
   background-color: pink;
@@ -16,23 +17,25 @@
     font-weight: 400;
     font-size: 1.5rem;
   }
+
   #about-box {
     @extend %half-box-sizing;
     display: grid;
-    background-color: yellow;
+    background-color: cadetblue;
     .title-box {
       margin: auto;
     }
   }
   #about-contents-box {
     @extend %half-box-sizing;
-    background-color: green;
+    background-color: papayawhip;
     display: none;
   }
+
   #nature-box {
     @extend %half-box-sizing;
     display: grid;
-    background-color: blue;
+    background-color: turquoise;
     .title-box {
       margin: auto;
     }
@@ -42,5 +45,34 @@
     background-color: papayawhip;
     display: none;
   }
+}
 
+// tablet
+@media only screen and (max-width: 768px) {
+  #keywords-section {
+    background-color: red;
+    #title {
+      font-size: 3.2rem;
+    }
+    #paragraphs {
+      font-size: 1rem;
+    }
+  }
+}
+
+// mobile
+@media only screen and (max-width: 480px) {
+  #keywords-section {
+    background-color: green;
+    #title {
+      font-size: 2.5rem;
+    }
+    #paragraphs {
+      font-size: 1rem;
+    }
+    #about-box, #about-contents-box, #nature-box, #nature-contents-box {
+      width: 100vw;
+      height: 300px;
+    }
+  }
 }

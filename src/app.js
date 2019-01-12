@@ -5,9 +5,16 @@ const $aboutKeywordBox = $('.about-keyword-box');
 const $aboutContentBox = $('.about-contents-box');
 const $natureKeywordBox = $('.nature-keyword-box');
 const $natureContentBox = $('.nature-contents-box');
+const $foodKeywordBox = $('.food-keyword-box');
+const $foodContentBox = $('.food-contents-box');
+const $artKeywordBox = $('.art-keyword-box');
+const $artContentBox = $('.art-contents-box');
+const $lifeKeywordBox = $('.life-keyword-box');
+const $lifeContentBox = $('.life-contents-box');
+const $contactKeywordBox = $('.contact-keyword-box');
+const $contactContentBox = $('.contact-contents-box');
 
 const windw = this;
-const $this = this;
 
 $.fn.siteTitleEffect = function ( pos ) {
   const $this = this,
@@ -44,5 +51,25 @@ $aboutKeywordBox.click(
 $natureKeywordBox.click(
   () => {
     $natureContentBox.toggle();
+  }
+);
+$foodKeywordBox.click(
+  () => {
+    $foodContentBox.toggle();
+  }
+);
+$artKeywordBox.click(
+  () => {
+    $artContentBox.toggle();
+  }
+);
+$lifeKeywordBox.click(
+  () => {
+    $lifeContentBox.toggle();
+  }
+);
+$contactKeywordBox.click(
+  () => {
+    $contactContentBox.toggle();
   }
 );

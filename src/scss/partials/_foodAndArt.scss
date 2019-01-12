@@ -1,0 +1,38 @@
+
+
+#food-box {
+  @extend %half-box-sizing;
+  display: grid;
+  background-color: royalblue;
+  .title-box {
+    margin: auto;
+  }
+}
+#food-contents-box {
+  @extend %half-box-sizing;
+  background-color: papayawhip;
+  display: none;
+}
+
+#art-box {
+  @extend %half-box-sizing;
+  display: grid;
+  background-color: deepskyblue;
+  .title-box {
+    margin: auto;
+  }
+}
+#art-contents-box {
+  @extend %half-box-sizing;
+  background-color: papayawhip;
+  display: none;
+}
+
+
+// mobile
+@media only screen and (max-width: 480px) {
+#food-box, #food-contents-box, #art-box, #art-contents-box {
+  width: 100vw;
+  height: 300px;
+  }
+}

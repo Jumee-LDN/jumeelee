@@ -10,6 +10,7 @@
   height: 400px;
 }
 
+
 $content-padding: 0.8rem 5rem 0rem 1.4rem;
 
 
@@ -22,4 +23,6 @@ body {
 }
 
 @import "partials/title";
-@import "partials/keywords";
+@import "partials/aboutAndNature";
+@import "partials/foodAndArt";
+@import "partials/lifeAndContact";
