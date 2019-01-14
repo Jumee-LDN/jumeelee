@@ -20,9 +20,18 @@
 }
 
 $black: #181818;
-
+$green: #28ff7e;
+$overlay-green: #00ff66;
 $content-padding: 0.8rem 5rem 0rem 1.4rem;
+$key-content-padding: 3rem 5rem 0rem 1.4rem;
+$logo-container-padding: 5rem 5rem 3rem 1.4rem;
 
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
 
 body {
   margin: 0;

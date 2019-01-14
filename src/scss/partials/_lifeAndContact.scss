@@ -10,7 +10,7 @@
 }
 #life-contents-box {
   @extend %half-box-sizing;
-  background-color: #b2ffc3;
+  background-color: tint(#28ff7e, 82%);
   display: none;
 }
 
@@ -25,7 +25,7 @@
 }
 #contact-contents-box {
   @extend %half-box-sizing;
-  background-color: #b2ffc3;
+  background-color: tint(#28ff7e, 90%);
   display: none;
 }
 

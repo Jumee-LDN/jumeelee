@@ -11,7 +11,7 @@
 }
 #food-contents-box {
   @extend %half-box-sizing;
-  background-color: #b2ffc3;
+  background-color: tint(#28ff7e, 66%);
   display: none;
 }
 
@@ -26,7 +26,7 @@
 }
 #art-contents-box {
   @extend %half-box-sizing;
-  background-color: #b2ffc3;
+  background-color: tint(#28ff7e, 74%);
   display: none;
 }
 

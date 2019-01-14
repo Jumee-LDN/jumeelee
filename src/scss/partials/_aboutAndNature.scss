@@ -20,38 +20,53 @@
   }
 
   .text-box {
-    padding: $content-padding;
-    padding-bottom: 3rem;
+    padding: $key-content-padding;
   }
 
   #about-box {
     @extend %half-box-sizing;
     display: grid;
     @extend %arrow-setting;
-    // background-color: cadetblue;
     .title-box {
       margin: auto;
     }
   }
   #about-contents-box {
     @extend %half-box-sizing;
-    background-color: #b2ffc3;
+    background-color: tint(#28ff7e, 50%);
     overflow: auto;
     display: none;
+    .logos-container {
+      padding: $logo-container-padding;
+    }
   }
 
   #nature-box {
     @extend %half-box-sizing;
     display: grid;
+    overflow: hidden;
+    background-color: $overlay-green;
     @extend %arrow-setting;
-    // background-color: turquoise;
+    .gif-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: -90px;
+      .gif-img {
+        //Keep ratio
+        flex: none;
+        width: 245%;
+        height: 100%;
+        opacity: 0.6;
+      }
+    }
     .title-box {
       margin: auto;
     }
   }
   #nature-contents-box {
     @extend %half-box-sizing;
-    background-color: #b2ffc3;
+    background-color: tint(#28ff7e, 58%);
     display: none;
   }
 }

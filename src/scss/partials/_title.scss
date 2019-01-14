@@ -8,7 +8,7 @@
   position: relative;
   .title-box {
     width: 50vw;
-    // background-color: grey;
+    background-color: white;
     .title {
       margin-top: 10rem;
       margin-left: 5rem;
@@ -27,11 +27,10 @@
   }
   .summary-box {
     width: 50vw;
-    background-color: #28ff7e;
+    background-color: $green;
     position: absolute;
     bottom: 0;
     right: 0;
-    padding-bottom: 3rem;
     #summary-start {
       padding: $content-padding;
       padding-top: 2rem;
@@ -47,7 +46,7 @@
       line-height: 1.8rem;
     }
     .logos-container {
-      padding: 5rem 5rem 0rem 1.4rem;
+      padding: $logo-container-padding;
       a {
         padding-right: 0.5rem;
       }

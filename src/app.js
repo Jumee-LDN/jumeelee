@@ -13,7 +13,7 @@ const $lifeKeywordBox = $('.life-keyword-box');
 const $lifeContentBox = $('.life-contents-box');
 const $contactKeywordBox = $('.contact-keyword-box');
 const $contactContentBox = $('.contact-contents-box');
-
+const $arrow = $('.arrow');
 const windw = this;
 
 $.fn.siteTitleEffect = function ( pos ) {
@@ -48,6 +48,13 @@ $aboutKeywordBox.click(
     $aboutContentBox.toggle();
   }
 );
+$aboutKeywordBox.hover(
+  ()=> {
+    $arrow[0].src = 'file:///Users/jumeelee/portfolio/jumeelee/src/images/right-arrow-green.png';
+  }, 
+  ()=> {
+    $arrow[0].src = 'file:///Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+  } );
 $aboutContentBox.click(
   () => {
     $aboutContentBox.toggle();

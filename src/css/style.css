@@ -51,6 +51,7 @@ body main #project-title {
 }
 .title-container .title-box {
   width: 50vw;
+  background-color: white;
 }
 .title-container .title-box .title {
   margin-top: 10rem;
@@ -73,7 +74,6 @@ body main #project-title {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding-bottom: 3rem;
 }
 .title-container .summary-box #summary-start {
   padding: 0.8rem 5rem 0rem 1.4rem;
@@ -89,7 +89,7 @@ body main #project-title {
   line-height: 1.8rem;
 }
 .title-container .summary-box .logos-container {
-  padding: 5rem 5rem 0rem 1.4rem;
+  padding: 5rem 5rem 3rem 1.4rem;
 }
 .title-container .summary-box .logos-container a {
   padding-right: 0.5rem;
@@ -153,8 +153,7 @@ body main #project-title {
   line-height: 2rem;
 }
 #keywords-section .text-box {
-  padding: 0.8rem 5rem 0rem 1.4rem;
-  padding-bottom: 3rem;
+  padding: 3rem 5rem 0rem 1.4rem;
 }
 #keywords-section #about-box {
   display: grid;
@@ -163,18 +162,35 @@ body main #project-title {
   margin: auto;
 }
 #keywords-section #about-contents-box {
-  background-color: #b2ffc3;
+  background-color: #94ffbf;
   overflow: auto;
   display: none;
 }
+#keywords-section #about-contents-box .logos-container {
+  padding: 5rem 5rem 3rem 1.4rem;
+}
 #keywords-section #nature-box {
   display: grid;
+  overflow: hidden;
+  background-color: #00ff66;
+}
+#keywords-section #nature-box .gif-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -90px;
+}
+#keywords-section #nature-box .gif-container .gif-img {
+  flex: none;
+  width: 245%;
+  height: 100%;
+  opacity: 0.6;
 }
 #keywords-section #nature-box .title-box {
   margin: auto;
 }
 #keywords-section #nature-contents-box {
-  background-color: #b2ffc3;
+  background-color: #a5ffc9;
   display: none;
 }
 
@@ -212,7 +228,7 @@ body main #project-title {
 }
 
 #food-contents-box {
-  background-color: #b2ffc3;
+  background-color: #b6ffd3;
   display: none;
 }
 
@@ -224,7 +240,7 @@ body main #project-title {
 }
 
 #art-contents-box {
-  background-color: #b2ffc3;
+  background-color: #c7ffdd;
   display: none;
 }
 
@@ -242,7 +258,7 @@ body main #project-title {
 }
 
 #life-contents-box {
-  background-color: #b2ffc3;
+  background-color: #d8ffe8;
   display: none;
 }
 
@@ -254,7 +270,7 @@ body main #project-title {
 }
 
 #contact-contents-box {
-  background-color: #b2ffc3;
+  background-color: #eafff2;
   display: none;
 }
 
