@@ -15,16 +15,19 @@
   #paragraphs {
     @extend %serif-set;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 
   .text-box {
     padding: $content-padding;
+    padding-bottom: 3rem;
   }
-  
+
   #about-box {
     @extend %half-box-sizing;
     display: grid;
+    @extend %arrow-setting;
     // background-color: cadetblue;
     .title-box {
       margin: auto;
@@ -32,13 +35,15 @@
   }
   #about-contents-box {
     @extend %half-box-sizing;
-    background-color: yellow;
+    background-color: #b2ffc3;
+    overflow: auto;
     display: none;
   }
 
   #nature-box {
     @extend %half-box-sizing;
     display: grid;
+    @extend %arrow-setting;
     // background-color: turquoise;
     .title-box {
       margin: auto;
@@ -46,7 +51,7 @@
   }
   #nature-contents-box {
     @extend %half-box-sizing;
-    background-color: yellow;
+    background-color: #b2ffc3;
     display: none;
   }
 }
@@ -67,7 +72,7 @@
 // mobile
 @media only screen and (max-width: 480px) {
   #keywords-section {
-    background-color: green;
+    background-color: blue;
     #title {
       font-size: 2.5rem;
     }

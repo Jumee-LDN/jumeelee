@@ -1,15 +1,31 @@
 footer {
   background-color: $black;
-  display: flex;
   color: white;
-  position: relative;
   bottom: 0;
+  width: 100vw;
+  height: 350px;
   section {
-    width: 100vw;
-    height: 300px;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    .footer-title {
+      opacity: 0.5;
+      font-weight: 600;
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+    }
     div {
-      margin: auto;
+      margin: 5rem 4rem;
+      p {
+        margin: 0;
+      }
+    }
+    .footer-logo-container {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      a {
+        padding-top: 0.5rem;
+      }
     }
   }
 }

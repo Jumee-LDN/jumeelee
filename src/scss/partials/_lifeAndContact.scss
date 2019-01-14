@@ -2,6 +2,7 @@
 #life-box {
   @extend %half-box-sizing;
   display: grid;
+  @extend %arrow-setting;
   // background-color: aquamarine;
   .title-box {
     margin: auto;
@@ -9,13 +10,14 @@
 }
 #life-contents-box {
   @extend %half-box-sizing;
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 
 #contact-box {
   @extend %half-box-sizing;
   display: grid;
+  @extend %arrow-setting;
   // background-color: paleturquoise;
   .title-box {
     margin: auto;
@@ -23,7 +25,7 @@
 }
 #contact-contents-box {
   @extend %half-box-sizing;
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 

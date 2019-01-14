@@ -27,13 +27,14 @@
   }
   .summary-box {
     width: 50vw;
-    background-color: yellow;
+    background-color: #28ff7e;
     position: absolute;
     bottom: 0;
     right: 0;
     padding-bottom: 3rem;
     #summary-start {
       padding: $content-padding;
+      padding-top: 2rem;
       font-size: 2rem;
       font-weight: 600;
       line-height: 2.8rem;
@@ -44,6 +45,15 @@
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.8rem;
+    }
+    .logos-container {
+      padding: 5rem 5rem 0rem 1.4rem;
+      a {
+        padding-right: 0.5rem;
+      }
+      .logo-linkedin {
+        line-height: 1rem;
+      }
     }
   }
 }
@@ -69,7 +79,7 @@
 // mobile
 @media only screen and (max-width: 480px) {
   .title-container {
-    background-color: green;
+    background-color: blue;
     height: 1400px;
     .title-box {
       .title {

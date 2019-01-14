@@ -1,4 +1,4 @@
-#keywords-section #title, .title-container, body {
+#keywords-section #title, .title-container, body main #project-title, body {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -11,13 +11,35 @@
   height: 400px;
 }
 
+#contact-box, #life-box, #art-box, #food-box, #keywords-section #nature-box, #keywords-section #about-box {
+  position: relative;
+}
+#contact-box .arrow, #life-box .arrow, #art-box .arrow, #food-box .arrow, #keywords-section #nature-box .arrow, #keywords-section #about-box .arrow {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
 body {
   margin: 0;
   color: #181818;
 }
+body a {
+  text-decoration: none;
+}
+body .site-mark {
+  font-weight: 900;
+  font-size: 1rem;
+}
 body main {
   display: flex;
   flex-direction: column;
+}
+body main #project-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 2rem;
 }
 
 .title-container {
@@ -47,7 +69,7 @@ body main {
 }
 .title-container .summary-box {
   width: 50vw;
-  background-color: yellow;
+  background-color: #28ff7e;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -55,6 +77,7 @@ body main {
 }
 .title-container .summary-box #summary-start {
   padding: 0.8rem 5rem 0rem 1.4rem;
+  padding-top: 2rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.8rem;
@@ -64,6 +87,15 @@ body main {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.8rem;
+}
+.title-container .summary-box .logos-container {
+  padding: 5rem 5rem 0rem 1.4rem;
+}
+.title-container .summary-box .logos-container a {
+  padding-right: 0.5rem;
+}
+.title-container .summary-box .logos-container .logo-linkedin {
+  line-height: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,7 +114,7 @@ body main {
 }
 @media only screen and (max-width: 480px) {
   .title-container {
-    background-color: green;
+    background-color: blue;
     height: 1400px;
   }
   .title-container .title-box .title {
@@ -117,10 +149,12 @@ body main {
 }
 #keywords-section #paragraphs {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 #keywords-section .text-box {
   padding: 0.8rem 5rem 0rem 1.4rem;
+  padding-bottom: 3rem;
 }
 #keywords-section #about-box {
   display: grid;
@@ -129,7 +163,8 @@ body main {
   margin: auto;
 }
 #keywords-section #about-contents-box {
-  background-color: yellow;
+  background-color: #b2ffc3;
+  overflow: auto;
   display: none;
 }
 #keywords-section #nature-box {
@@ -139,7 +174,7 @@ body main {
   margin: auto;
 }
 #keywords-section #nature-contents-box {
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 
@@ -156,7 +191,7 @@ body main {
 }
 @media only screen and (max-width: 480px) {
   #keywords-section {
-    background-color: green;
+    background-color: blue;
   }
   #keywords-section #title {
     font-size: 2.5rem;
@@ -177,7 +212,7 @@ body main {
 }
 
 #food-contents-box {
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 
@@ -189,7 +224,7 @@ body main {
 }
 
 #art-contents-box {
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 
@@ -207,7 +242,7 @@ body main {
 }
 
 #life-contents-box {
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 
@@ -219,7 +254,7 @@ body main {
 }
 
 #contact-contents-box {
-  background-color: yellow;
+  background-color: #b2ffc3;
   display: none;
 }
 
@@ -231,18 +266,34 @@ body main {
 }
 footer {
   background-color: #181818;
-  display: flex;
   color: white;
-  position: relative;
   bottom: 0;
+  width: 100vw;
+  height: 350px;
 }
 footer section {
-  width: 100vw;
-  height: 300px;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+}
+footer section .footer-title {
+  opacity: 0.5;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 }
 footer section div {
-  margin: auto;
+  margin: 5rem 4rem;
+}
+footer section div p {
+  margin: 0;
+}
+footer section .footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+footer section .footer-logo-container a {
+  padding-top: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

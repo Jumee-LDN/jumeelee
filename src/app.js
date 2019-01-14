@@ -48,27 +48,62 @@ $aboutKeywordBox.click(
     $aboutContentBox.toggle();
   }
 );
+$aboutContentBox.click(
+  () => {
+    $aboutContentBox.toggle();
+  }
+);
+
 $natureKeywordBox.click(
   () => {
     $natureContentBox.toggle();
   }
 );
+$natureContentBox.click(
+  () => {
+    $natureContentBox.toggle();
+  }
+);
+
 $foodKeywordBox.click(
   () => {
     $foodContentBox.toggle();
   }
 );
+$foodContentBox.click(
+  () => {
+    $foodContentBox.toggle();
+  }
+);
+
 $artKeywordBox.click(
   () => {
     $artContentBox.toggle();
   }
 );
+$artContentBox.click(
+  () => {
+    $artContentBox.toggle();
+  }
+);
+
 $lifeKeywordBox.click(
   () => {
     $lifeContentBox.toggle();
   }
 );
+$lifeContentBox.click(
+  () => {
+    $lifeContentBox.toggle();
+  }
+);
+
 $contactKeywordBox.click(
+  () => {
+    $contactContentBox.toggle();
+  }
+);
+$contactContentBox.click(
   () => {
     $contactContentBox.toggle();
   }
