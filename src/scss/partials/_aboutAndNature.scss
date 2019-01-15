@@ -45,19 +45,21 @@
     @extend %half-box-sizing;
     display: grid;
     overflow: hidden;
-    background-color: $overlay-green;
     @extend %arrow-setting;
-    .gif-container {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: -90px;
-      .gif-img {
-        //Keep ratio
-        flex: none;
-        width: 245%;
-        height: 100%;
-        opacity: 0.6;
+    .hover-keyword-container {
+      display: none;
+      .gif-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -90px;
+        .gif-img {
+          //Keep ratio
+          flex: none;
+          width: 245%;
+          height: 100%;
+          opacity: 0.6;
+        }
       }
     }
     .title-box {
@@ -68,6 +70,44 @@
     @extend %half-box-sizing;
     background-color: tint(#28ff7e, 58%);
     display: none;
+    overflow: scroll;
+    .project-description {
+      background-color: $mint;
+      margin: 2rem 0 4rem 0;
+      position: relative;
+      .logo-title-set {
+        #brief-icon {
+          padding: 1rem 0.5rem 1rem 1rem;
+        }
+        #title {
+          font-size: 1rem;
+          display: inline-block;
+          position: absolute;
+          line-height: 2.3rem;
+        }
+      }
+      .link-set {
+        padding-left: 1rem;
+        padding-bottom: 3rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+        u, a {
+          display: block;
+          margin: 1rem 0;
+          margin-bottom: 0.5rem;
+          color: inherit;
+        }
+      }
+      .paragraphs-small {
+        @extend %serif-set;
+        margin: 0;
+        padding: 0 1rem;
+        padding-bottom: 1rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.8rem;
+      }
+    }
   }
 }
 

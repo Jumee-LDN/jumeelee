@@ -1,8 +1,8 @@
-#keywords-section #title, .title-container, body main #project-title, body {
+#contact-contents-box #email, #keywords-section #title, .title-container, body main #project-title, body {
   font-family: "Nunito Sans", sans-serif;
 }
 
-#keywords-section #paragraphs, .title-container .summary-box .summary-contents {
+#contact-contents-box #email a, #contact-contents-box #email u, #keywords-section #nature-contents-box .project-description .paragraphs-small, #keywords-section #paragraphs, .title-container .summary-box .summary-contents {
   font-family: "Merriweather", serif;
 }
 
@@ -76,20 +76,20 @@ body main #project-title {
   right: 0;
 }
 .title-container .summary-box #summary-start {
-  padding: 0.8rem 5rem 0rem 1.4rem;
+  padding: 0.8rem 5rem 0rem 1.6rem;
   padding-top: 2rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: 2.8rem;
 }
 .title-container .summary-box .summary-contents {
-  padding: 0.8rem 5rem 0rem 1.4rem;
+  padding: 0.8rem 5rem 0rem 1.6rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.8rem;
 }
 .title-container .summary-box .logos-container {
-  padding: 5rem 5rem 3rem 1.4rem;
+  padding: 2rem 5rem 3rem 1.6rem;
 }
 .title-container .summary-box .logos-container a {
   padding-right: 0.5rem;
@@ -153,7 +153,7 @@ body main #project-title {
   line-height: 2rem;
 }
 #keywords-section .text-box {
-  padding: 3rem 5rem 0rem 1.4rem;
+  padding: 3rem 5rem 0rem 1.6rem;
 }
 #keywords-section #about-box {
   display: grid;
@@ -167,20 +167,22 @@ body main #project-title {
   display: none;
 }
 #keywords-section #about-contents-box .logos-container {
-  padding: 5rem 5rem 3rem 1.4rem;
+  padding: 2rem 5rem 3rem 1.6rem;
 }
 #keywords-section #nature-box {
   display: grid;
   overflow: hidden;
-  background-color: #00ff66;
 }
-#keywords-section #nature-box .gif-container {
+#keywords-section #nature-box .hover-keyword-container {
+  display: none;
+}
+#keywords-section #nature-box .hover-keyword-container .gif-container {
   display: flex;
   justify-content: center;
   position: absolute;
   top: -90px;
 }
-#keywords-section #nature-box .gif-container .gif-img {
+#keywords-section #nature-box .hover-keyword-container .gif-container .gif-img {
   flex: none;
   width: 245%;
   height: 100%;
@@ -192,6 +194,41 @@ body main #project-title {
 #keywords-section #nature-contents-box {
   background-color: #a5ffc9;
   display: none;
+  overflow: scroll;
+}
+#keywords-section #nature-contents-box .project-description {
+  background-color: #e5ffef;
+  margin: 2rem 0 4rem 0;
+  position: relative;
+}
+#keywords-section #nature-contents-box .project-description .logo-title-set #brief-icon {
+  padding: 1rem 0.5rem 1rem 1rem;
+}
+#keywords-section #nature-contents-box .project-description .logo-title-set #title {
+  font-size: 1rem;
+  display: inline-block;
+  position: absolute;
+  line-height: 2.3rem;
+}
+#keywords-section #nature-contents-box .project-description .link-set {
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#keywords-section #nature-contents-box .project-description .link-set u, #keywords-section #nature-contents-box .project-description .link-set a {
+  display: block;
+  margin: 1rem 0;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+#keywords-section #nature-contents-box .project-description .paragraphs-small {
+  margin: 0;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -273,6 +310,15 @@ body main #project-title {
   background-color: #eafff2;
   display: none;
 }
+#contact-contents-box #email {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#contact-contents-box #email a, #contact-contents-box #email u {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: inherit;
+}
 
 @media only screen and (max-width: 480px) {
   #life-box, #life-contents-box, #contact-box, #contact-contents-box {
@@ -310,6 +356,16 @@ footer section .footer-logo-container {
 }
 footer section .footer-logo-container a {
   padding-top: 0.5rem;
+}
+footer section .footer-logo-container .icon-info {
+  font-size: 0.7rem;
+  color: grey;
+  opacity: 0.5;
+  margin: 0;
+  margin-top: 2rem;
+}
+footer section .footer-logo-container .icon-info a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

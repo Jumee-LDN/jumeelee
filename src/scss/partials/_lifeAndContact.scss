@@ -27,6 +27,17 @@
   @extend %half-box-sizing;
   background-color: tint(#28ff7e, 90%);
   display: none;
+  #email {
+    @extend %sans-set;
+    font-size: 2.5rem;
+    font-weight: 700;
+    a, u {
+      @extend %serif-set;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: inherit;
+    }
+  }
 }
 
 
