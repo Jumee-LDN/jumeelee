@@ -52,10 +52,10 @@ $aboutKeywordBox.click(
 );
 $aboutKeywordBox.hover(
   ()=> {
-    $arrow[0].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/click-green.png';
+    $arrow[0].src = './src/images/click-green.png';
   },
   ()=> {
-    $arrow[0].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+    $arrow[0].src = './src/images/right-arrow.png';
   } );
 $aboutContentBox.click(
   () => {
@@ -70,10 +70,10 @@ $natureKeywordBox.click(
 );
 $natureKeywordBox.hover(
   ()=> {
-    $arrow[1].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/click-green.png';
+    $arrow[1].src = './src/images/click-green.png';
   },
   ()=> {
-    $arrow[1].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+    $arrow[1].src = './src/images/right-arrow.png';
   });
 // $natureKeywordBox.mouseenter(
 //   ()=> {
@@ -105,10 +105,10 @@ $foodKeywordBox.click(
 );
 $foodKeywordBox.hover(
   ()=> {
-    $arrow[2].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/click-green.png';
+    $arrow[2].src = './src/images/click-green.png';
   },
   ()=> {
-    $arrow[2].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+    $arrow[2].src = './src/images/right-arrow.png';
   });
 $foodContentBox.click(
   () => {
@@ -123,10 +123,10 @@ $artKeywordBox.click(
 );
 $artKeywordBox.hover(
   ()=> {
-    $arrow[3].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/click-green.png';
+    $arrow[3].src = './src/images/click-green.png';
   },
   ()=> {
-    $arrow[3].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+    $arrow[3].src = './src/images/right-arrow.png';
   });
 $artContentBox.click(
   () => {
@@ -141,10 +141,10 @@ $lifeKeywordBox.click(
 );
 $lifeKeywordBox.hover(
   ()=> {
-    $arrow[4].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/click-green.png';
+    $arrow[4].src = './src/images/click-green.png';
   },
   ()=> {
-    $arrow[4].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+    $arrow[4].src = './src/images/right-arrow.png';
   });
 $lifeContentBox.click(
   () => {
@@ -159,10 +159,10 @@ $contactKeywordBox.click(
 );
 $contactKeywordBox.hover(
   ()=> {
-    $arrow[5].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/click-green.png';
+    $arrow[5].src = './src/images/click-green.png';
   },
   ()=> {
-    $arrow[5].src = 'file://Users/jumeelee/portfolio/jumeelee/src/images/right-arrow.png';
+    $arrow[5].src = './src/images/right-arrow.png';
   });
 $contactContentBox.click(
   () => {
