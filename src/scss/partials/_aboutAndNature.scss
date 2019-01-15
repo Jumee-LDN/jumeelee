@@ -24,18 +24,15 @@
   }
 
   #about-box {
-    @extend %half-box-sizing;
-    display: grid;
-    @extend %arrow-setting;
-    .title-box {
-      margin: auto;
-    }
+    @extend %key-box-layout-set;
   }
   #about-contents-box {
     @extend %half-box-sizing;
+    position: relative;
     background-color: tint(#28ff7e, 50%);
     overflow: auto;
     display: none;
+    box-shadow: #00732d 0px -5px 20px -15px;
     .logos-container {
       padding: $logo-container-padding;
     }
@@ -67,46 +64,11 @@
     }
   }
   #nature-contents-box {
-    @extend %half-box-sizing;
+    @extend %content-layout-set;
+    position: relative;
     background-color: tint(#28ff7e, 58%);
-    display: none;
-    overflow: scroll;
     .project-description {
-      background-color: $mint;
-      margin: 2rem 0 4rem 0;
-      position: relative;
-      .logo-title-set {
-        #brief-icon {
-          padding: 1rem 0.5rem 1rem 1rem;
-        }
-        #title {
-          font-size: 1rem;
-          display: inline-block;
-          position: absolute;
-          line-height: 2.3rem;
-        }
-      }
-      .link-set {
-        padding-left: 1rem;
-        padding-bottom: 3rem;
-        font-weight: 700;
-        font-size: 1.2rem;
-        u, a {
-          display: block;
-          margin: 1rem 0;
-          margin-bottom: 0.5rem;
-          color: inherit;
-        }
-      }
-      .paragraphs-small {
-        @extend %serif-set;
-        margin: 0;
-        padding: 0 1rem;
-        padding-bottom: 1rem;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.8rem;
-      }
+      background-color: mintTint(white, 100%);
     }
   }
 }
@@ -114,7 +76,7 @@
 // tablet
 @media only screen and (max-width: 768px) {
   #keywords-section {
-    background-color: red;
+    background-color: white;
     #title {
       font-size: 3.2rem;
     }
@@ -127,7 +89,7 @@
 // mobile
 @media only screen and (max-width: 480px) {
   #keywords-section {
-    background-color: blue;
+    background-color: white;
     #title {
       font-size: 2.5rem;
     }

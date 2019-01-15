@@ -1,35 +1,28 @@
-
-
 #food-box {
-  @extend %half-box-sizing;
-  display: grid;
-  @extend %arrow-setting;
-  // background-color: royalblue;
-  .title-box {
-    margin: auto;
-  }
+  @extend %key-box-layout-set;
 }
 #food-contents-box {
-  @extend %half-box-sizing;
+  @extend %content-layout-set;
+  position: relative;
   background-color: tint(#28ff7e, 66%);
-  display: none;
+  .project-description {
+    background-color: mintTint(white, 90%);
+  }
+
 }
+
 
 #art-box {
-  @extend %half-box-sizing;
-  display: grid;
-  @extend %arrow-setting;
-  // background-color: deepskyblue;
-  .title-box {
-    margin: auto;
-  }
+  @extend %key-box-layout-set;
 }
 #art-contents-box {
-  @extend %half-box-sizing;
+  @extend %content-layout-set;
+  position: relative;
   background-color: tint(#28ff7e, 74%);
-  display: none;
+  .project-description {
+    background-color: mintTint(white, 80%);
+  }
 }
-
 
 // mobile
 @media only screen and (max-width: 480px) {

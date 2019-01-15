@@ -2,22 +2,69 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-#contact-contents-box #email a, #contact-contents-box #email u, #keywords-section #nature-contents-box .project-description .paragraphs-small, #keywords-section #paragraphs, .title-container .summary-box .summary-contents {
+#contact-contents-box #email a, #contact-contents-box #email u, #keywords-section #paragraphs, .title-container .summary-box .summary-contents, #life-contents-box .project-description .paragraphs-small, #art-contents-box .project-description .paragraphs-small, #food-contents-box .project-description .paragraphs-small, #keywords-section #nature-contents-box .project-description .paragraphs-small {
   font-family: "Merriweather", serif;
 }
 
-#contact-contents-box, #contact-box, #life-contents-box, #life-box, #art-contents-box, #art-box, #food-contents-box, #food-box, #keywords-section #nature-contents-box, #keywords-section #nature-box, #keywords-section #about-contents-box, #keywords-section #about-box {
+#contact-contents-box, #keywords-section #nature-box, #keywords-section #about-contents-box, #contact-box, #life-box, #art-box, #food-box, #keywords-section #about-box, #life-contents-box, #art-contents-box, #food-contents-box, #keywords-section #nature-contents-box {
   width: 50vw;
   height: 400px;
 }
 
-#contact-box, #life-box, #art-box, #food-box, #keywords-section #nature-box, #keywords-section #about-box {
+#keywords-section #nature-box, #contact-box, #life-box, #art-box, #food-box, #keywords-section #about-box {
   position: relative;
 }
-#contact-box .arrow, #life-box .arrow, #art-box .arrow, #food-box .arrow, #keywords-section #nature-box .arrow, #keywords-section #about-box .arrow {
+#keywords-section #nature-box .arrow, #contact-box .arrow, #life-box .arrow, #art-box .arrow, #food-box .arrow, #keywords-section #about-box .arrow {
   position: absolute;
   right: 2rem;
   top: 2rem;
+}
+
+#life-contents-box .project-description .paragraphs-small, #art-contents-box .project-description .paragraphs-small, #food-contents-box .project-description .paragraphs-small, #keywords-section #nature-contents-box .project-description .paragraphs-small {
+  margin: 0;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+#life-contents-box .project-description .link-set, #art-contents-box .project-description .link-set, #food-contents-box .project-description .link-set, #keywords-section #nature-contents-box .project-description .link-set {
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#life-contents-box .project-description .link-set u, #art-contents-box .project-description .link-set u, #food-contents-box .project-description .link-set u, #keywords-section #nature-contents-box .project-description .link-set u, #life-contents-box .project-description .link-set a, #art-contents-box .project-description .link-set a, #food-contents-box .project-description .link-set a, #keywords-section #nature-contents-box .project-description .link-set a {
+  display: block;
+  margin: 1rem 0;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+#life-contents-box, #art-contents-box, #food-contents-box, #keywords-section #nature-contents-box {
+  display: none;
+  overflow: scroll;
+  box-shadow: #00732d 0px -5px 20px -15px;
+}
+#life-contents-box .project-description, #art-contents-box .project-description, #food-contents-box .project-description, #keywords-section #nature-contents-box .project-description {
+  margin: 2rem 0 4rem 0;
+  position: relative;
+}
+#life-contents-box .project-description .logo-title-set #brief-icon, #art-contents-box .project-description .logo-title-set #brief-icon, #food-contents-box .project-description .logo-title-set #brief-icon, #keywords-section #nature-contents-box .project-description .logo-title-set #brief-icon {
+  padding: 1rem 0.5rem 1rem 1rem;
+}
+#life-contents-box .project-description .logo-title-set #title, #art-contents-box .project-description .logo-title-set #title, #food-contents-box .project-description .logo-title-set #title, #keywords-section #nature-contents-box .project-description .logo-title-set #title {
+  font-size: 1rem;
+  display: inline-block;
+  position: absolute;
+}
+#contact-box, #life-box, #art-box, #food-box, #keywords-section #about-box {
+  background-color: white;
+  display: grid;
+}
+#contact-box .title-box, #life-box .title-box, #art-box .title-box, #food-box .title-box, #keywords-section #about-box .title-box {
+  margin: auto;
 }
 
 body {
@@ -40,6 +87,22 @@ body main #project-title {
   font-size: 2rem;
   margin: 0;
   padding-top: 2rem;
+  color: #a29566;
+}
+body main .note {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 1.5rem 2rem;
+  color: #18994c;
+}
+body main .arrow-in-container {
+  padding-top: 2rem;
+}
+body main .arrow-in-container .arrow-in {
+  position: absolute;
+  right: 1.6rem;
+  transform: rotate(180deg);
 }
 
 .title-container {
@@ -76,6 +139,7 @@ body main #project-title {
   right: 0;
 }
 .title-container .summary-box #summary-start {
+  color: #9a894c;
   padding: 0.8rem 5rem 0rem 1.6rem;
   padding-top: 2rem;
   font-size: 2rem;
@@ -100,7 +164,7 @@ body main #project-title {
 
 @media only screen and (max-width: 768px) {
   .title-container {
-    background-color: red;
+    background-color: white;
     flex-direction: column;
     height: 1200px;
   }
@@ -110,11 +174,13 @@ body main #project-title {
   }
   .title-container .summary-box {
     width: 100vw;
+    top: 700px;
+    overflow: scroll;
   }
 }
 @media only screen and (max-width: 480px) {
   .title-container {
-    background-color: blue;
+    background-color: white;
     height: 1400px;
   }
   .title-container .title-box .title {
@@ -153,18 +219,14 @@ body main #project-title {
   line-height: 2rem;
 }
 #keywords-section .text-box {
-  padding: 3rem 5rem 0rem 1.6rem;
-}
-#keywords-section #about-box {
-  display: grid;
-}
-#keywords-section #about-box .title-box {
-  margin: auto;
+  padding: 2rem 5rem 0rem 1.6rem;
 }
 #keywords-section #about-contents-box {
+  position: relative;
   background-color: #94ffbf;
   overflow: auto;
   display: none;
+  box-shadow: #00732d 0px -5px 20px -15px;
 }
 #keywords-section #about-contents-box .logos-container {
   padding: 2rem 5rem 3rem 1.6rem;
@@ -192,48 +254,16 @@ body main #project-title {
   margin: auto;
 }
 #keywords-section #nature-contents-box {
+  position: relative;
   background-color: #a5ffc9;
-  display: none;
-  overflow: scroll;
 }
 #keywords-section #nature-contents-box .project-description {
-  background-color: #e5ffef;
-  margin: 2rem 0 4rem 0;
-  position: relative;
-}
-#keywords-section #nature-contents-box .project-description .logo-title-set #brief-icon {
-  padding: 1rem 0.5rem 1rem 1rem;
-}
-#keywords-section #nature-contents-box .project-description .logo-title-set #title {
-  font-size: 1rem;
-  display: inline-block;
-  position: absolute;
-  line-height: 2.3rem;
-}
-#keywords-section #nature-contents-box .project-description .link-set {
-  padding-left: 1rem;
-  padding-bottom: 3rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-#keywords-section #nature-contents-box .project-description .link-set u, #keywords-section #nature-contents-box .project-description .link-set a {
-  display: block;
-  margin: 1rem 0;
-  margin-bottom: 0.5rem;
-  color: inherit;
-}
-#keywords-section #nature-contents-box .project-description .paragraphs-small {
-  margin: 0;
-  padding: 0 1rem;
-  padding-bottom: 1rem;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.8rem;
+  background-color: #e0ffec;
 }
 
 @media only screen and (max-width: 768px) {
   #keywords-section {
-    background-color: red;
+    background-color: white;
   }
   #keywords-section #title {
     font-size: 3.2rem;
@@ -244,7 +274,7 @@ body main #project-title {
 }
 @media only screen and (max-width: 480px) {
   #keywords-section {
-    background-color: blue;
+    background-color: white;
   }
   #keywords-section #title {
     font-size: 2.5rem;
@@ -257,28 +287,20 @@ body main #project-title {
     height: 280px;
   }
 }
-#food-box {
-  display: grid;
-}
-#food-box .title-box {
-  margin: auto;
-}
-
 #food-contents-box {
+  position: relative;
   background-color: #b6ffd3;
-  display: none;
 }
-
-#art-box {
-  display: grid;
-}
-#art-box .title-box {
-  margin: auto;
+#food-contents-box .project-description {
+  background-color: #e3ffee;
 }
 
 #art-contents-box {
+  position: relative;
   background-color: #c7ffdd;
-  display: none;
+}
+#art-contents-box .project-description {
+  background-color: #e6fff0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -287,30 +309,22 @@ body main #project-title {
     height: 280px;
   }
 }
-#life-box {
-  display: grid;
-}
-#life-box .title-box {
-  margin: auto;
-}
-
 #life-contents-box {
+  position: relative;
   background-color: #d8ffe8;
-  display: none;
 }
-
-#contact-box {
-  display: grid;
-}
-#contact-box .title-box {
-  margin: auto;
+#life-contents-box .project-description {
+  background-color: #ecfff4;
 }
 
 #contact-contents-box {
+  position: relative;
   background-color: #eafff2;
   display: none;
 }
 #contact-contents-box #email {
+  word-break: break-word;
+  color: #a29566;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -324,6 +338,7 @@ body main #project-title {
   #life-box, #life-contents-box, #contact-box, #contact-contents-box {
     width: 100vw;
     height: 280px;
+    overflow: scroll;
   }
 }
 footer {

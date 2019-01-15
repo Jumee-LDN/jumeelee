@@ -1,3 +1,23 @@
+$black: #181818;
+$green: #28ff7e;
+$overlay-green: #00ff66;
+$mint: #e5ffef;
+$gold: #a29566;
+$content-padding: 0.8rem 5rem 0rem 1.6rem;
+$key-content-padding: 2rem 5rem 0rem 1.6rem;
+$logo-container-padding: 2rem 5rem 3rem 1.6rem;
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function mintTint($color, $percentage) {
+  @return mix(#e0ffec, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
 %sans-set {
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -19,19 +39,65 @@
   }
 }
 
-$black: #181818;
-$green: #28ff7e;
-$overlay-green: #00ff66;
-$mint: #e5ffef;
-$content-padding: 0.8rem 5rem 0rem 1.6rem;
-$key-content-padding: 3rem 5rem 0rem 1.6rem;
-$logo-container-padding: 2rem 5rem 3rem 1.6rem;
-
-@function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
+%paragraphs-small-set {
+  @extend %serif-set;
+  margin: 0;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
-@function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
+
+%link-set {
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  u, a {
+    display: block;
+    margin: 1rem 0;
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+}
+
+%content-layout-set {
+  @extend %half-box-sizing;
+  display: none;
+  overflow: scroll;
+  box-shadow: #00732d 0px -5px 20px -15px;
+  .project-description {
+    margin: 2rem 0 4rem 0;
+    position: relative;
+    .logo-title-set {
+      #brief-icon {
+        padding: 1rem 0.5rem 1rem 1rem;
+      }
+      #title {
+        font-size: 1rem;
+        display: inline-block;
+        position: absolute;
+        // line-height: 2.3rem;
+      }
+    }
+    .link-set {
+      @extend %link-set;
+    }
+    .paragraphs-small {
+      @extend %paragraphs-small-set;
+    }
+  }
+}
+
+%key-box-layout-set {
+  @extend %half-box-sizing;
+  @extend %arrow-setting;
+  background-color: white;
+  display: grid;
+  .title-box {
+    margin: auto;
+  }
 }
 
 body {
@@ -54,6 +120,23 @@ body {
       font-size: 2rem;
       margin: 0;
       padding-top: 2rem;
+      color: $gold;
+
+    }
+    .note {
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      padding: 1.5rem 2rem;
+      color: shade(#28ff7e, 40%);
+    }
+    .arrow-in-container{
+      padding-top: 2rem;
+      .arrow-in {
+        position: absolute;
+        right: 1.6rem;
+        transform: rotate(180deg);
+      }
     }
   }
 }

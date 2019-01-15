@@ -1,34 +1,28 @@
 
 #life-box {
-  @extend %half-box-sizing;
-  display: grid;
-  @extend %arrow-setting;
-  // background-color: aquamarine;
-  .title-box {
-    margin: auto;
-  }
+  @extend %key-box-layout-set;
 }
 #life-contents-box {
-  @extend %half-box-sizing;
+  @extend %content-layout-set;
+  position: relative;
   background-color: tint(#28ff7e, 82%);
-  display: none;
+  .project-description {
+    background-color: mintTint(white, 60%);
+  }
 }
 
 #contact-box {
-  @extend %half-box-sizing;
-  display: grid;
-  @extend %arrow-setting;
-  // background-color: paleturquoise;
-  .title-box {
-    margin: auto;
-  }
+  @extend %key-box-layout-set;
 }
 #contact-contents-box {
   @extend %half-box-sizing;
+  position: relative;
   background-color: tint(#28ff7e, 90%);
   display: none;
   #email {
+    word-break: break-word;
     @extend %sans-set;
+    color: $gold;
     font-size: 2.5rem;
     font-weight: 700;
     a, u {
@@ -46,5 +40,6 @@
 #life-box, #life-contents-box, #contact-box, #contact-contents-box {
   width: 100vw;
   height: 280px;
+  overflow: scroll;
   }
 }

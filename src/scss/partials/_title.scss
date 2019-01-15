@@ -32,6 +32,7 @@
     bottom: 0;
     right: 0;
     #summary-start {
+      color: #a29566;
       padding: $content-padding;
       padding-top: 2rem;
       font-size: 2rem;
@@ -60,7 +61,7 @@
 // tablet
 @media only screen and (max-width: 768px) {
   .title-container {
-    background-color: red;
+    background-color: white;
     flex-direction: column;
     height: 1200px;
     // position: unset;
@@ -70,6 +71,8 @@
     }
     .summary-box {
       width: 100vw;
+      top: 700px;
+      overflow: scroll;
       // position: unset;
 
     }
@@ -78,7 +81,7 @@
 // mobile
 @media only screen and (max-width: 480px) {
   .title-container {
-    background-color: blue;
+    background-color: white;
     height: 1400px;
     .title-box {
       .title {
