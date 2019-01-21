@@ -5,6 +5,8 @@ const $aboutKeywordBox = $('.about-keyword-box');
 const $aboutContentBox = $('.about-contents-box');
 const $natureKeywordBox = $('.nature-keyword-box');
 const $natureContentBox = $('.nature-contents-box');
+const $skillKeywordBox = $('.skill-keyword-box');
+const $skillContentBox = $('.skill-contents-box');
 const $foodKeywordBox = $('.food-keyword-box');
 const $foodContentBox = $('.food-contents-box');
 const $artKeywordBox = $('.art-keyword-box');
@@ -62,6 +64,25 @@ $aboutContentBox.click(
     $aboutContentBox.toggle();
   }
 );
+// SKILL SECTION
+$skillKeywordBox.click(
+  () => {
+    $skillContentBox.toggle();
+  }
+);
+$skillKeywordBox.hover(
+  ()=> {
+    $arrow[1].src = './src/images/click-green.png';
+  },
+  ()=> {
+    $arrow[1].src = './src/images/right-arrow.png';
+  });
+$skillContentBox.click(
+  () => {
+    $skillContentBox.toggle();
+  }
+);
+
 // NATURE SECTION
 $natureKeywordBox.click(
   () => {
@@ -75,23 +96,6 @@ $natureKeywordBox.hover(
   ()=> {
     $arrow[1].src = './src/images/right-arrow.png';
   });
-// $natureKeywordBox.mouseenter(
-//   ()=> {
-//     $hoverKeywordContainer.toggle();
-//     $natureKeywordBox.css({
-//       'background-color': '#00ff66'
-//     });
-//   }
-// );
-// $natureKeywordBox.mouseleave(
-//   ()=> {
-//     $hoverKeywordContainer.toggle();
-//     $natureKeywordBox.css({
-//       color: '#181818',
-//       'background-color': 'white'
-//     });
-//   }
-// );
 $natureContentBox.click(
   () => {
     $natureContentBox.toggle();

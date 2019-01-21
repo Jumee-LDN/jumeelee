@@ -2,25 +2,25 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-#contact-contents-box #email a, #contact-contents-box #email u, #keywords-section #paragraphs, .title-container .summary-box .summary-contents, #life-contents-box .project-description .paragraphs-small, #art-contents-box .project-description .paragraphs-small, #food-contents-box .project-description .paragraphs-small, #keywords-section #nature-contents-box .project-description .paragraphs-small {
+#contact-contents-box #email a, #contact-contents-box #email u, #keywords-section #paragraphs, .title-container .summary-box .summary-contents, #life-contents-box .project-description .paragraphs-small, #art-contents-box .project-description .paragraphs-small, #food-contents-box .project-description .paragraphs-small, #keywords-section #nature-contents-box .project-description .paragraphs-small, #keywords-section #skill-contents-box .project-description .paragraphs-small {
   font-family: "Merriweather", serif;
 }
 
-#contact-contents-box, #keywords-section #nature-box, #keywords-section #about-contents-box, #contact-box, #life-box, #art-box, #food-box, #keywords-section #about-box, #life-contents-box, #art-contents-box, #food-contents-box, #keywords-section #nature-contents-box {
+#contact-contents-box, #keywords-section #about-contents-box, #contact-box, #life-box, #art-box, #food-box, #keywords-section #nature-box, #keywords-section #skill-box, #keywords-section #about-box, #life-contents-box, #art-contents-box, #food-contents-box, #keywords-section #nature-contents-box, #keywords-section #skill-contents-box {
   width: 50vw;
   height: 400px;
 }
 
-#keywords-section #nature-box, #contact-box, #life-box, #art-box, #food-box, #keywords-section #about-box {
+#contact-box, #life-box, #art-box, #food-box, #keywords-section #nature-box, #keywords-section #skill-box, #keywords-section #about-box {
   position: relative;
 }
-#keywords-section #nature-box .arrow, #contact-box .arrow, #life-box .arrow, #art-box .arrow, #food-box .arrow, #keywords-section #about-box .arrow {
+#contact-box .arrow, #life-box .arrow, #art-box .arrow, #food-box .arrow, #keywords-section #nature-box .arrow, #keywords-section #skill-box .arrow, #keywords-section #about-box .arrow {
   position: absolute;
   right: 2rem;
   top: 2rem;
 }
 
-#life-contents-box .project-description .paragraphs-small, #art-contents-box .project-description .paragraphs-small, #food-contents-box .project-description .paragraphs-small, #keywords-section #nature-contents-box .project-description .paragraphs-small {
+#life-contents-box .project-description .paragraphs-small, #art-contents-box .project-description .paragraphs-small, #food-contents-box .project-description .paragraphs-small, #keywords-section #nature-contents-box .project-description .paragraphs-small, #keywords-section #skill-contents-box .project-description .paragraphs-small {
   margin: 0;
   padding: 0 1rem;
   padding-bottom: 1rem;
@@ -29,41 +29,41 @@
   line-height: 1.8rem;
 }
 
-#life-contents-box .project-description .link-set, #art-contents-box .project-description .link-set, #food-contents-box .project-description .link-set, #keywords-section #nature-contents-box .project-description .link-set {
+#life-contents-box .project-description .link-set, #art-contents-box .project-description .link-set, #food-contents-box .project-description .link-set, #keywords-section #nature-contents-box .project-description .link-set, #keywords-section #skill-contents-box .project-description .link-set {
   padding-left: 1rem;
   padding-bottom: 3rem;
   font-weight: 700;
   font-size: 1.2rem;
 }
-#life-contents-box .project-description .link-set u, #art-contents-box .project-description .link-set u, #food-contents-box .project-description .link-set u, #keywords-section #nature-contents-box .project-description .link-set u, #life-contents-box .project-description .link-set a, #art-contents-box .project-description .link-set a, #food-contents-box .project-description .link-set a, #keywords-section #nature-contents-box .project-description .link-set a {
+#life-contents-box .project-description .link-set u, #art-contents-box .project-description .link-set u, #food-contents-box .project-description .link-set u, #keywords-section #nature-contents-box .project-description .link-set u, #keywords-section #skill-contents-box .project-description .link-set u, #life-contents-box .project-description .link-set a, #art-contents-box .project-description .link-set a, #food-contents-box .project-description .link-set a, #keywords-section #nature-contents-box .project-description .link-set a, #keywords-section #skill-contents-box .project-description .link-set a {
   display: block;
   margin: 1rem 0;
   margin-bottom: 0.5rem;
   color: inherit;
 }
 
-#life-contents-box, #art-contents-box, #food-contents-box, #keywords-section #nature-contents-box {
+#life-contents-box, #art-contents-box, #food-contents-box, #keywords-section #nature-contents-box, #keywords-section #skill-contents-box {
   display: none;
   overflow: scroll;
   box-shadow: #00732d 0px -5px 20px -15px;
 }
-#life-contents-box .project-description, #art-contents-box .project-description, #food-contents-box .project-description, #keywords-section #nature-contents-box .project-description {
+#life-contents-box .project-description, #art-contents-box .project-description, #food-contents-box .project-description, #keywords-section #nature-contents-box .project-description, #keywords-section #skill-contents-box .project-description {
   margin: 2rem 0 4rem 0;
   position: relative;
 }
-#life-contents-box .project-description .logo-title-set #brief-icon, #art-contents-box .project-description .logo-title-set #brief-icon, #food-contents-box .project-description .logo-title-set #brief-icon, #keywords-section #nature-contents-box .project-description .logo-title-set #brief-icon {
+#life-contents-box .project-description .logo-title-set #brief-icon, #art-contents-box .project-description .logo-title-set #brief-icon, #food-contents-box .project-description .logo-title-set #brief-icon, #keywords-section #nature-contents-box .project-description .logo-title-set #brief-icon, #keywords-section #skill-contents-box .project-description .logo-title-set #brief-icon {
   padding: 1rem 0.5rem 1rem 1rem;
 }
-#life-contents-box .project-description .logo-title-set #title, #art-contents-box .project-description .logo-title-set #title, #food-contents-box .project-description .logo-title-set #title, #keywords-section #nature-contents-box .project-description .logo-title-set #title {
+#life-contents-box .project-description .logo-title-set #title, #art-contents-box .project-description .logo-title-set #title, #food-contents-box .project-description .logo-title-set #title, #keywords-section #nature-contents-box .project-description .logo-title-set #title, #keywords-section #skill-contents-box .project-description .logo-title-set #title {
   font-size: 1rem;
   display: inline-block;
   position: absolute;
 }
-#contact-box, #life-box, #art-box, #food-box, #keywords-section #about-box {
+#contact-box, #life-box, #art-box, #food-box, #keywords-section #nature-box, #keywords-section #skill-box, #keywords-section #about-box {
   background-color: white;
   display: grid;
 }
-#contact-box .title-box, #life-box .title-box, #art-box .title-box, #food-box .title-box, #keywords-section #about-box .title-box {
+#contact-box .title-box, #life-box .title-box, #art-box .title-box, #food-box .title-box, #keywords-section #nature-box .title-box, #keywords-section #skill-box .title-box, #keywords-section #about-box .title-box {
   margin: auto;
 }
 
@@ -139,7 +139,7 @@ body main .arrow-in-container .arrow-in {
   right: 0;
 }
 .title-container .summary-box #summary-start {
-  color: #9a894c;
+  color: #a29566;
   padding: 0.8rem 5rem 0rem 1.6rem;
   padding-top: 2rem;
   font-size: 2rem;
@@ -231,27 +231,12 @@ body main .arrow-in-container .arrow-in {
 #keywords-section #about-contents-box .logos-container {
   padding: 2rem 5rem 3rem 1.6rem;
 }
-#keywords-section #nature-box {
-  display: grid;
-  overflow: hidden;
+#keywords-section #skill-contents-box {
+  position: relative;
+  background-color: #a5ffc9;
 }
-#keywords-section #nature-box .hover-keyword-container {
-  display: none;
-}
-#keywords-section #nature-box .hover-keyword-container .gif-container {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: -90px;
-}
-#keywords-section #nature-box .hover-keyword-container .gif-container .gif-img {
-  flex: none;
-  width: 245%;
-  height: 100%;
-  opacity: 0.6;
-}
-#keywords-section #nature-box .title-box {
-  margin: auto;
+#keywords-section #skill-contents-box .project-description {
+  background-color: #e0ffec;
 }
 #keywords-section #nature-contents-box {
   position: relative;
@@ -346,7 +331,6 @@ footer {
   color: white;
   bottom: 0;
   width: 100vw;
-  height: 350px;
 }
 footer section {
   display: flex;
