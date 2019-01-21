@@ -43,8 +43,23 @@
     @extend %content-layout-set;
     position: relative;
     background-color: tint(#28ff7e, 58%);
-    .project-description {
+    .skill-description {
+      padding: 1rem;
+      margin-top: 1rem;
       background-color: mintTint(white, 100%);
+      .logo-title-set {
+        display: inline-block;
+        padding: 1rem;
+        text-align: center;
+        .tech-name {
+          font-size: 1rem;
+          font-weight: 900;
+          margin-top: 0.2rem;
+        }
+        i {
+          font-size: 2.2rem;
+        }
+      }
     }
   }
 
@@ -85,7 +100,7 @@
     #paragraphs {
       font-size: 1rem;
     }
-    #about-box, #about-contents-box, #nature-box, #nature-contents-box {
+    #about-box, #about-contents-box, #skill-box, #skill-contents-box, #nature-box, #nature-contents-box {
       width: 100vw;
       height: 280px;
     }

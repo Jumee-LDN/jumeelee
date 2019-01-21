@@ -235,8 +235,23 @@ body main .arrow-in-container .arrow-in {
   position: relative;
   background-color: #a5ffc9;
 }
-#keywords-section #skill-contents-box .project-description {
+#keywords-section #skill-contents-box .skill-description {
+  padding: 1rem;
+  margin-top: 1rem;
   background-color: #e0ffec;
+}
+#keywords-section #skill-contents-box .skill-description .logo-title-set {
+  display: inline-block;
+  padding: 1rem;
+  text-align: center;
+}
+#keywords-section #skill-contents-box .skill-description .logo-title-set .tech-name {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 0.2rem;
+}
+#keywords-section #skill-contents-box .skill-description .logo-title-set i {
+  font-size: 2.2rem;
 }
 #keywords-section #nature-contents-box {
   position: relative;
@@ -267,7 +282,7 @@ body main .arrow-in-container .arrow-in {
   #keywords-section #paragraphs {
     font-size: 1rem;
   }
-  #keywords-section #about-box, #keywords-section #about-contents-box, #keywords-section #nature-box, #keywords-section #nature-contents-box {
+  #keywords-section #about-box, #keywords-section #about-contents-box, #keywords-section #skill-box, #keywords-section #skill-contents-box, #keywords-section #nature-box, #keywords-section #nature-contents-box {
     width: 100vw;
     height: 280px;
   }
