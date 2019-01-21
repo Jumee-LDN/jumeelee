@@ -67,6 +67,13 @@ $logo-container-padding: 2rem 5rem 3rem 1.6rem;
   display: none;
   overflow: scroll;
   box-shadow: #00732d 0px -5px 20px -15px;
+  .thumb-nail-container {
+    padding: 1rem 0;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
   .project-description {
     margin: 2rem 0 4rem 0;
     position: relative;

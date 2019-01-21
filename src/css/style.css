@@ -47,6 +47,13 @@
   overflow: scroll;
   box-shadow: #00732d 0px -5px 20px -15px;
 }
+#life-contents-box .thumb-nail-container, #art-contents-box .thumb-nail-container, #food-contents-box .thumb-nail-container, #keywords-section #nature-contents-box .thumb-nail-container, #keywords-section #skill-contents-box .thumb-nail-container {
+  padding: 1rem 0;
+}
+#life-contents-box .thumb-nail-container img, #art-contents-box .thumb-nail-container img, #food-contents-box .thumb-nail-container img, #keywords-section #nature-contents-box .thumb-nail-container img, #keywords-section #skill-contents-box .thumb-nail-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
 #life-contents-box .project-description, #art-contents-box .project-description, #food-contents-box .project-description, #keywords-section #nature-contents-box .project-description, #keywords-section #skill-contents-box .project-description {
   margin: 2rem 0 4rem 0;
   position: relative;
